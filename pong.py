@@ -5,6 +5,8 @@ screen.setup(800, 600)
 screen.title("Pong")
 screen.bgcolor("black")
 
+screen.bgpic("images/sonicfeet.png")
+
 spelfigur1 = Turtle()
 spelfigur1.shape("square")
 spelfigur1.shapesize(6, 1)
