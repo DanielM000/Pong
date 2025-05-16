@@ -52,9 +52,11 @@ screen.onkey(spelfigur2_up, "w")
 screen.onkey(spelfigur2_down, "s")
 
 game_is_on = True
-while game_is_on == True:
+while game_is_on:
     flytta_bollen()
-    if boll_y == 300:
-        boll_y = bollen.ycor - 10
+    if bollen.ycor() >= 300 and bollen.xcor() < 400:
+        boll_x = bollen.xcor() + 10
+        boll_y = bollen.ycor() - 10
+        bollen.goto(boll_x, boll_y)
 
 screen.exitonclick()
